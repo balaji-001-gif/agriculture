@@ -118,23 +118,11 @@ after_uninstall = "agriculture.agriculture.setup.cleanup_role_and_permissions"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"agriculture.tasks.all"
-# 	],
-# 	"daily": [
-# 		"agriculture.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"agriculture.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"agriculture.tasks.weekly"
-# 	],
-# 	"monthly": [
-# 		"agriculture.tasks.monthly"
-# 	],
-# }
+scheduler_events = {
+	"daily": [
+		"agriculture.agriculture.tasks.send_daily_agricultural_alerts"
+	]
+}
 
 # Testing
 # -------
