@@ -94,6 +94,43 @@ class CropCycle(Document):
 
 		self.save()
 
+	@frappe.whitelist()
+	def get_p_and_l(self):
+		"""
+		Calculates Profit and Loss for the Crop Cycle.
+		Revenue: Total of Sales Invoices linked to this Project.
+		Costs: Total of Stock Entries (Material Issue) + Equipment Logs costs.
+		"""
+		if not self.project:
+			return {"revenue": 0, "cost": 0, "profit": 0}
+
+		# Revenue from Sales Invoices linked to the project
+		revenue = frappe.db.get_value("Sales Invoice Item", 
+			{"project": self.project, "docstatus": 1}, 
+			"sum(base_net_amount)") or 0
+
+		# Costs from Stock Entries (Material Issue) linked to the project
+		stock_costs = frappe.db.get_value("Stock Entry Detail", 
+			{"project": self.project, "docstatus": 1, "t_warehouse": ["is", "not set"]}, 
+			"sum(base_amount)") or 0
+
+		# Costs from Equipment Logs
+		equipment_hours = frappe.db.get_value("Equipment Log", 
+			{"crop_cycle": self.name, "docstatus": 1}, 
+			"sum(hours)") or 0
+		
+		# Assuming a generic hourly rate
+		equipment_cost = equipment_hours * 100 
+
+		total_cost = stock_costs + equipment_cost
+		
+		return {
+			"revenue": float(revenue),
+			"cost": float(total_cost),
+			"profit": float(revenue - total_cost),
+			"currency": frappe.db.get_default("currency")
+		}
+
 
 def get_coordinates(doc):
 	return ast.literal_eval(doc.location).get('features')[0].get('geometry').get('coordinates')

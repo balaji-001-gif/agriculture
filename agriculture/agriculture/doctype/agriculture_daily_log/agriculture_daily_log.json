@@ -67,6 +67,50 @@
    "fieldname": "notes",
    "fieldtype": "Small Text",
    "label": "Notes"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break",
+   "label": "Stock Integration"
+  },
+  {
+   "fieldname": "issue_from_stock",
+   "fieldtype": "Check",
+   "label": "Issue from Stock"
+  },
+  {
+   "fieldname": "stock_entry",
+   "fieldtype": "Link",
+   "label": "Stock Entry",
+   "options": "Stock Entry",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "label": "Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "label": "Item",
+   "options": "Item"
+  },
+  {
+   "fieldname": "qty_used",
+   "fieldtype": "Float",
+   "label": "Quantity Used"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
   }
  ],
  "index_web_pages_for_search": 0,

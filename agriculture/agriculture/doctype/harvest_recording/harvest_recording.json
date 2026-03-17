@@ -1,0 +1,119 @@
+{
+ "allow_copy": 0,
+ "allow_events_in_timeline": 0,
+ "allow_guest_to_view": 0,
+ "allow_import": 1,
+ "allow_rename": 0,
+ "autoname": "AG-HR-.YYYY.-.#####",
+ "creation": "2026-03-17 18:50:00.000000",
+ "doctype": "DocType",
+ "fields": [
+  {
+   "fieldname": "crop_cycle",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Crop Cycle",
+   "options": "Crop Cycle",
+   "reqd": 1
+  },
+  {
+   "fieldname": "harvest_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Harvest Date",
+   "reqd": 1,
+   "default": "Today"
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "yield_quantity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Yield Quantity",
+   "reqd": 1
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "grading",
+   "fieldtype": "Select",
+   "label": "Grading / Quality",
+   "options": "A\nB\nC\nD",
+   "default": "A"
+  },
+  {
+   "fieldname": "target_warehouse",
+   "fieldtype": "Link",
+   "label": "Target Warehouse",
+   "options": "Warehouse",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break",
+   "label": "Inventory Integration"
+  },
+  {
+   "fieldname": "create_stock_entry",
+   "fieldtype": "Check",
+   "label": "Create Stock Entry (Material Receipt)",
+   "default": "1"
+  },
+  {
+   "fieldname": "stock_entry",
+   "fieldtype": "Link",
+   "label": "Stock Entry",
+   "options": "Stock Entry",
+   "read_only": 1
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  }
+ ],
+ "module": "Agriculture",
+ "name": "Harvest Recording",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Agriculture Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Agriculture User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,108 @@
+{
+ "allow_copy": 0,
+ "allow_events_in_timeline": 0,
+ "allow_guest_to_view": 0,
+ "allow_import": 1,
+ "allow_rename": 0,
+ "autoname": "AG-EL-.YYYY.-.#####",
+ "creation": "2026-03-17 18:48:00.000000",
+ "doctype": "DocType",
+ "fields": [
+  {
+   "fieldname": "equipment",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Equipment",
+   "options": "Asset",
+   "reqd": 1
+  },
+  {
+   "fieldname": "operator",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Operator",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1,
+   "default": "Today"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "hours",
+   "fieldtype": "Float",
+   "label": "Hours Used",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fuel_consumed",
+   "fieldtype": "Float",
+   "label": "Fuel Consumed (Ltrs)"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "crop_cycle",
+   "fieldtype": "Link",
+   "label": "Crop Cycle",
+   "options": "Crop Cycle",
+   "reqd": 1
+  },
+  {
+   "fieldname": "activity_type",
+   "fieldtype": "Select",
+   "label": "Activity Type",
+   "options": "Ploughing\nSowing\nIrrigation\nSpraying\nHarvesting\nTransport\nOther"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  }
+ ],
+ "module": "Agriculture",
+ "name": "Equipment Log",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Agriculture Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Agriculture User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

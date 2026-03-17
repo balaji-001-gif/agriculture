@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"type\": \"header\", \"data\": {\"text\": \"Reports & Masters\", \"level\": 4, \"col\": 12}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Crops & Lands\", \"col\": 4}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Analytics\", \"col\": 4}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Diseases & Fertilizers\", \"col\": 4}}]",
+ "content": "[{\"type\": \"header\", \"data\": {\"text\": \"Reports & Masters\", \"level\": 4, \"col\": 12}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Crops & Lands\", \"col\": 4}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Field Operations\", \"col\": 4}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Analytics\", \"col\": 4}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Setup\", \"col\": 4}}]",
  "creation": "2020-03-02 17:23:34.339274",
  "docstatus": 0,
  "doctype": "Workspace",
@@ -47,6 +47,47 @@
    "label": "Location",
    "link_count": 0,
    "link_to": "Location",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Field Operations",
+   "link_count": 0,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Agriculture Daily Log",
+   "link_count": 0,
+   "link_to": "Agriculture Daily Log",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Equipment Log",
+   "link_count": 0,
+   "link_to": "Equipment Log",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Harvest Recording",
+   "link_count": 0,
+   "link_to": "Harvest Recording",
    "link_type": "DocType",
    "onboard": 1,
    "type": "Link"
@@ -128,7 +169,7 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Diseases & Fertilizers",
+   "label": "Setup",
    "link_count": 0,
    "onboard": 0,
    "type": "Card Break"
@@ -156,7 +197,7 @@
    "type": "Link"
   }
  ],
- "modified": "2021-08-05 12:15:54.595198",
+ "modified": "2026-03-17 18:55:00.000000",
  "modified_by": "Administrator",
  "module": "Agriculture",
  "name": "Agriculture",
