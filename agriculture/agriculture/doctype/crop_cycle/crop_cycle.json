@@ -178,11 +178,19 @@
    "unique": 0
   },
   {
-    "fieldname": "cost_centre",
-    "fieldtype": "Link",
-    "label": "Cost Centre",
-    "options": "Cost Center"
-   },
+   "fieldname": "land_unit",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Land Unit",
+   "options": "Land Unit",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cost_centre",
+   "fieldtype": "Link",
+   "label": "Cost Centre",
+   "options": "Cost Center"
+  },
    {
     "fieldname": "season",
     "fieldtype": "Select",
