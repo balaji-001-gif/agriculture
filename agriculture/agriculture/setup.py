@@ -10,22 +10,27 @@ def setup_agriculture():
 	add_additional_permissions()
 
 def create_agriculture_data():
+	# Dynamically find the root Item Group to avoid LinkValidationError
+	all_item_groups = frappe.db.get_value("Item Group", {"is_group": 1, "parent_item_group": ("in", ["", None])}, "name")
+	if not all_item_groups:
+		all_item_groups = _("All Item Groups")
+
 	records = [
 		dict(
 			doctype='Item Group',
 			item_group_name='Fertilizer',
 			is_group=0,
-			parent_item_group=_('All Item Groups')),
+			parent_item_group=all_item_groups),
 		dict(
 			doctype='Item Group',
 			item_group_name='Seed',
 			is_group=0,
-			parent_item_group=_('All Item Groups')),
+			parent_item_group=all_item_groups),
 		dict(
 			doctype='Item Group',
 			item_group_name='By-product',
 			is_group=0,
-			parent_item_group=_('All Item Groups')),
+			parent_item_group=all_item_groups),
 		dict(
 			doctype='Item Group',
 			item_group_name='Produce',
