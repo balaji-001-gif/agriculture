@@ -33,7 +33,7 @@ def get_data(filters):
 		labour_cost = frappe.db.get_value("Labour Contract", {"crop_cycle": cc.name}, "sum(total_wage_bill)") or 0
 		
 		# Material Cost (Stock Entry - Material Issue)
-		material_cost = frappe.db.get_value("Stock Entry Detail", {"project": cc.project, "docstatus": 1, "t_warehouse": ["is", "not set"]}, "sum(base_amount)") or 0
+		material_cost = frappe.db.get_value("Stock Entry Detail", {"project": cc.project, "docstatus": 1, "t_warehouse": ["is", "not set"]}, "sum(amount)") or 0
 		
 		# Fuel Cost (can be estimated from Equipment Logs or specific item category)
 		# For simplicity, we filter Stock Entry items with category 'Fuel' if available, or just a placeholder logic
