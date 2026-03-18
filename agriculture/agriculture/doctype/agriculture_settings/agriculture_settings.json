@@ -19,6 +19,17 @@
    "fieldname": "openweathermap_api_key",
    "fieldtype": "Password",
    "label": "API Key"
+  },
+  {
+   "fieldname": "inventory_section",
+   "fieldtype": "Section Break",
+   "label": "Inventory Settings"
+  },
+  {
+   "fieldname": "fuel_warehouse",
+   "fieldtype": "Link",
+   "label": "Fuel Source Warehouse",
+   "options": "Warehouse"
   }
  ],
  "index_web_pages_for_search": 0,

@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_copy": 0,
+ "allow_events_in_timeline": 0,
+ "allow_guest_to_view": 0,
+ "allow_import": 1,
+ "allow_rename": 0,
+ "autoname": "format:IoT-{sensor_id}-{YYYYMMDD-HHmmss}",
+ "creation": "2026-03-18 11:20:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "fields": [
+  {
+   "fieldname": "sensor_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sensor ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "land_unit",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Land Unit",
+   "options": "Land Unit"
+  },
+  {
+   "fieldname": "timestamp",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Timestamp",
+   "default": "Now"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break",
+   "label": "Readings"
+  },
+  {
+   "fieldname": "temperature",
+   "fieldtype": "Float",
+   "label": "Temperature (\u00b0C)"
+  },
+  {
+   "fieldname": "humidity",
+   "fieldtype": "Float",
+   "label": "Humidity (%)"
+  },
+  {
+   "fieldname": "soil_moisture",
+   "fieldtype": "Float",
+   "label": "Soil Moisture (%)"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "light_intensity",
+   "fieldtype": "Float",
+   "label": "Light Intensity (Lux)"
+  },
+  {
+   "fieldname": "battery_level",
+   "fieldtype": "Float",
+   "label": "Battery Level (%)"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "is_submittable": 0,
+ "issingle": 0,
+ "istable": 0,
+ "modified": "2026-03-18 11:20:00.000000",
+ "modified_by": "Administrator",
+ "module": "Agriculture",
+ "name": "IoT Sensor Reading",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1, 
+   "report": 1, 
+   "role": "Agriculture Manager", 
+   "share": 1, 
+   "write": 1
+  }
+ ], 
+ "sort_field": "timestamp", 
+ "sort_order": "DESC", 
+ "track_changes": 0
+}

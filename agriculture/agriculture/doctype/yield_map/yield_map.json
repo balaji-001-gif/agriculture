@@ -1,0 +1,82 @@
+{
+ "actions": [],
+ "allow_copy": 0,
+ "allow_events_in_timeline": 0,
+ "allow_guest_to_view": 0,
+ "allow_import": 1,
+ "allow_rename": 0,
+ "autoname": "format:YM-{land_unit}-{MM-yy}",
+ "creation": "2026-03-18 11:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "fields": [
+  {
+   "fieldname": "land_unit",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Land Unit",
+   "options": "Land Unit",
+   "reqd": 1
+  },
+  {
+   "fieldname": "crop_cycle",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Crop Cycle",
+   "options": "Crop Cycle",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_harvest_qty",
+   "fieldtype": "Float",
+   "label": "Total Harvest Qty"
+  },
+  {
+   "fieldname": "yield_per_acre",
+   "fieldtype": "Float",
+   "label": "Yield per Acre",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break",
+   "label": "Spatial Analytics"
+  },
+  {
+   "fieldname": "map_html",
+   "fieldtype": "HTML",
+   "label": "Yield Map"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "is_submittable": 0,
+ "issingle": 0,
+ "istable": 0,
+ "modified": "2026-03-18 11:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Agriculture",
+ "name": "Yield Map",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1, 
+   "report": 1, 
+   "role": "Agriculture Manager", 
+   "share": 1, 
+   "write": 1
+  }
+ ], 
+ "sort_field": "modified", 
+ "sort_order": "DESC", 
+ "track_changes": 1
+}

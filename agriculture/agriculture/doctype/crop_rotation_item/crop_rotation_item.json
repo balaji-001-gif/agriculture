@@ -1,0 +1,48 @@
+{
+ "actions": [],
+ "allow_copy": 0,
+ "allow_events_in_timeline": 0,
+ "allow_guest_to_view": 0,
+ "allow_import": 0,
+ "allow_rename": 0,
+ "creation": "2026-03-18 10:55:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "fields": [
+  {
+   "fieldname": "planned_crop",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Planned Crop",
+   "options": "Crop",
+   "reqd": 1
+  },
+  {
+   "fieldname": "season",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Season",
+   "options": "\nKharif\nRabi\nZaid\nSummer"
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Year"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "is_submittable": 0,
+ "issingle": 0,
+ "istable": 1,
+ "modified": "2026-03-18 10:55:00.000000",
+ "modified_by": "Administrator",
+ "module": "Agriculture",
+ "name": "Crop Rotation Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified", 
+ "sort_order": "DESC", 
+ "track_changes": 1
+}

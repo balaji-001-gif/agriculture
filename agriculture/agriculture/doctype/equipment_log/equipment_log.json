@@ -1,12 +1,15 @@
 {
  "allow_copy": 0,
  "allow_events_in_timeline": 0,
+ "is_submittable": 1,
  "allow_guest_to_view": 0,
  "allow_import": 1,
  "allow_rename": 0,
  "autoname": "AG-EL-.YYYY.-.#####",
  "creation": "2026-03-17 18:48:00.000000",
  "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
  "fields": [
   {
    "fieldname": "equipment",
@@ -42,11 +45,6 @@
    "reqd": 1
   },
   {
-   "fieldname": "fuel_consumed",
-   "fieldtype": "Float",
-   "label": "Fuel Consumed (Ltrs)"
-  },
-  {
    "fieldname": "column_break_7",
    "fieldtype": "Column Break"
   },
@@ -62,6 +60,48 @@
    "fieldtype": "Select",
    "label": "Activity Type",
    "options": "Ploughing\nSowing\nIrrigation\nSpraying\nHarvesting\nTransport\nOther"
+  },
+  {
+   "fieldname": "section_break_fuel",
+   "fieldtype": "Section Break",
+   "label": "Fuel & Odometer"
+  },
+  {
+   "fieldname": "fuel_item",
+   "fieldtype": "Link",
+   "label": "Fuel Item",
+   "options": "Item"
+  },
+  {
+   "fieldname": "fuel_consumed",
+   "fieldtype": "Float",
+   "label": "Fuel Consumed (Ltrs)"
+  },
+  {
+   "fieldname": "column_break_odo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "starting_odometer",
+   "fieldtype": "Float",
+   "label": "Starting Odometer"
+  },
+  {
+   "fieldname": "ending_odometer",
+   "fieldtype": "Float",
+   "label": "Ending Odometer"
+  },
+  {
+   "fieldname": "section_break_inv",
+   "fieldtype": "Section Break",
+   "label": "Inventory Link"
+  },
+  {
+   "fieldname": "stock_entry",
+   "fieldtype": "Link",
+   "label": "Fuel Stock Entry",
+   "options": "Stock Entry",
+   "read_only": 1
   },
   {
    "fieldname": "section_break_10",

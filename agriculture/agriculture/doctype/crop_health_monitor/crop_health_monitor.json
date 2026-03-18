@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_copy": 0,
+ "allow_events_in_timeline": 1,
+ "allow_guest_to_view": 0,
+ "allow_import": 1,
+ "allow_rename": 0,
+ "autoname": "format:HLT-{crop_cycle}-{YYYYMMDD-HHmmss}",
+ "creation": "2026-03-18 11:25:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "fields": [
+  {
+   "fieldname": "crop_cycle",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Crop Cycle",
+   "options": "Crop Cycle",
+   "reqd": 1
+  },
+  {
+   "fieldname": "inspection_date",
+   "fieldtype": "Date",
+   "label": "Inspection Date",
+   "default": "Today"
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break",
+   "label": "Visual Evidence"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Health Image"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "health_score",
+   "fieldtype": "Percent",
+   "label": "AI Health Score"
+  },
+  {
+   "fieldname": "diagnosis",
+   "fieldtype": "Small Text",
+   "label": "AI Diagnosis"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break",
+   "label": "Manager Action"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Healthy\nWarning\nCritical\nUnder Treatment",
+   "default": "Healthy"
+  },
+  {
+   "fieldname": "action_taken",
+   "fieldtype": "Text",
+   "label": "Action Taken"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "is_submittable": 0,
+ "issingle": 0,
+ "istable": 0,
+ "modified": "2026-03-18 11:25:00.000000",
+ "modified_by": "Administrator",
+ "module": "Agriculture",
+ "name": "Crop Health Monitor",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1, 
+   "report": 1, 
+   "role": "Agriculture Manager", 
+   "share": 1, 
+   "write": 1
+  }
+ ], 
+ "sort_field": "inspection_date", 
+ "sort_order": "DESC", 
+ "track_changes": 1
+}
