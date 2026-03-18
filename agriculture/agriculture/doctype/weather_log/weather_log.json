@@ -1,0 +1,108 @@
+{
+ "actions": [],
+ "allow_copy": 0,
+ "allow_events_in_timeline": 0,
+ "allow_guest_to_view": 0,
+ "allow_import": 1,
+ "allow_rename": 0,
+ "autoname": "format:WL-{land_unit}-{date}",
+ "creation": "2026-03-18 10:40:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "fields": [
+  {
+   "fieldname": "land_unit",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Land Unit",
+   "options": "Land Unit",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1,
+   "default": "Today"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "temperature",
+   "fieldtype": "Float",
+   "label": "Temperature (\u00b0C)"
+  },
+  {
+   "fieldname": "humidity",
+   "fieldtype": "Float",
+   "label": "Humidity (%)"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break",
+   "label": "Advanced Parameters"
+  },
+  {
+   "fieldname": "precipitation",
+   "fieldtype": "Float",
+   "label": "Precipitation (mm)"
+  },
+  {
+   "fieldname": "wind_speed",
+   "fieldtype": "Float",
+   "label": "Wind Speed (km/h)"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "weather_condition",
+   "fieldtype": "Data",
+   "label": "Weather Condition"
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Data",
+   "label": "Source",
+   "default": "Manual/Auto"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "is_submittable": 0,
+ "issingle": 0,
+ "istable": 0,
+ "modified": "2026-03-18 10:40:00.000000",
+ "modified_by": "Administrator",
+ "module": "Agriculture",
+ "name": "Weather Log",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1, 
+   "report": 1, 
+   "role": "Agriculture Manager", 
+   "share": 1, 
+   "write": 1
+  }, 
+  {
+   "read": 1, 
+   "report": 1, 
+   "role": "Agriculture User", 
+   "share": 1, 
+   "write": 1
+  }
+ ], 
+ "sort_field": "modified", 
+ "sort_order": "DESC", 
+ "track_changes": 1
+}

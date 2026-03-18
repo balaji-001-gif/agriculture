@@ -1,0 +1,122 @@
+{
+ "actions": [],
+ "allow_copy": 0,
+ "allow_events_in_timeline": 0,
+ "allow_guest_to_view": 0,
+ "allow_import": 1,
+ "allow_rename": 0,
+ "autoname": "format:LU-{land_unit_name}",
+ "creation": "2026-03-18 10:25:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "fields": [
+  {
+   "fieldname": "land_unit_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Land Unit Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "gps_coordinates",
+   "fieldtype": "Geolocation",
+   "label": "GPS Coordinates"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Float",
+   "label": "Area"
+  },
+  {
+   "fieldname": "area_unit",
+   "fieldtype": "Select",
+   "label": "Area Unit",
+   "options": "\nAcre\nHectare\nGuntha"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break",
+   "label": "Ownership & Details"
+  },
+  {
+   "fieldname": "ownership_type",
+   "fieldtype": "Select",
+   "label": "Ownership Type",
+   "options": "Owned\nLeased\nContract"
+  },
+  {
+   "depends_on": "eval:doc.ownership_type=='Leased'",
+   "fieldname": "lease_expiry",
+   "fieldtype": "Date",
+   "label": "Lease Expiry"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "survey_number",
+   "fieldtype": "Data",
+   "label": "Survey Number"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "label": "Standard Location",
+   "options": "Location"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break",
+   "label": "Map Preview"
+  },
+  {
+   "fieldname": "map_html",
+   "fieldtype": "HTML",
+   "label": "Map View"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "is_submittable": 0,
+ "issingle": 0,
+ "istable": 0,
+ "modified": "2026-03-18 10:25:00.000000",
+ "modified_by": "Administrator",
+ "module": "Agriculture",
+ "name": "Land Unit",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Agriculture Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Agriculture User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

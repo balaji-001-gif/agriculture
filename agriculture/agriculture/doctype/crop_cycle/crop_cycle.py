@@ -53,7 +53,8 @@ class CropCycle(Document):
 			"doctype": "Project",
 			"project_name": self.title,
 			"expected_start_date": self.start_date,
-			"expected_end_date": add_days(self.start_date, period - 1)
+			"expected_end_date": add_days(self.start_date, period - 1),
+			"cost_center": self.cost_centre
 		}).insert()
 
 		return project.name

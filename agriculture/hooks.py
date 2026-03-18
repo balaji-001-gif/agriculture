@@ -120,7 +120,8 @@ after_uninstall = "agriculture.agriculture.setup.cleanup_role_and_permissions"
 
 scheduler_events = {
 	"daily": [
-		"agriculture.agriculture.tasks.send_daily_agricultural_alerts"
+		"agriculture.agriculture.tasks.send_daily_agricultural_alerts",
+		"agriculture.agriculture.doctype.weather_log.weather_log.update_weather_daily"
 	]
 }
 
@@ -190,11 +191,12 @@ global_search_doctypes = {
 		{'doctype': 'Disease', 'index': 7},
 		{'doctype': 'Crop', 'index': 8},
 		{'doctype': 'Fertilizer', 'index': 9},
-		{'doctype': 'Crop Cycle', 'index': 10}
+		{'doctype': 'Crop Cycle', 'index': 10},
+		{'doctype': 'Land Unit', 'index': 11},
+		{'doctype': 'Weather Log', 'index': 12}
 	]
 }
 
 domains = {
 	'Agriculture': 'agriculture.agriculture.agriculture',
 }
-
