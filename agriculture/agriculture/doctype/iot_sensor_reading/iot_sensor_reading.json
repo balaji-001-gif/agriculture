@@ -5,7 +5,7 @@
  "allow_guest_to_view": 0,
  "allow_import": 1,
  "allow_rename": 0,
- "autoname": "format:IoT-{sensor_id}-{YYYYMMDD-HHmmss}",
+ "autoname": "format:IoT-{sensor_id}-.YYYYMMDD.-.HHmmss.",
  "creation": "2026-03-18 11:20:00.000000",
  "doctype": "DocType",
  "editable_grid": 1,
