@@ -7,6 +7,7 @@
  "for_user": "",
  "hide_custom": 0,
  "icon": "agriculture",
+ "is_standard": 1,
  "idx": 0,
  "label": "Agriculture",
  "links": [
@@ -204,7 +205,6 @@
  "owner": "Administrator",
  "parent_page": "",
  "public": 1,
- "restrict_to_domain": "Agriculture",
  "roles": [],
  "sequence_id": 3,
  "shortcuts": [],
