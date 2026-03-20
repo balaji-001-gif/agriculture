@@ -49,6 +49,13 @@
    "fieldtype": "Column Break"
   },
   {
+   "fieldname": "land_unit",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Land Unit",
+   "options": "Land Unit"
+  },
+  {
    "fieldname": "crop_cycle",
    "fieldtype": "Link",
    "label": "Crop Cycle",
